@@ -1,8 +1,11 @@
 # freq_patterns
 
-This is an implementation of two frequent pattern mining algorithms: Apriori and FP-Growth. 
+Author: Stephen Gass
+Date: 2/28/21
 
-Both functions take a list of transactions as inputs and return a 2 by n dimensional list comprising a list of max patterns in the input set and their corresponding support counts. 
+This python package is an implementation of two frequent pattern mining algorithms: Apriori and FP-Growth. Import and use in your python3 code.
+
+Both functions take a list of transactions and a minimum support count as inputs and return a list object comprising a list of max patterns and their corresponding support counts. 
 
 For example, 
 
@@ -16,6 +19,6 @@ For example,
 
     apriori(data, 3)
 
-will return the following:
+will return the following list object:
 
     [[['E', 'K', 'O']], [3]]
